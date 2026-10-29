@@ -1,0 +1,92 @@
+/* Aparência do dashboard.
+   O Dash carrega automaticamente todo arquivo .css da pasta "assets". */
+
+body {
+    margin: 0;
+    background-color: #f4f5f7;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.pagina {
+    padding: 16px;
+    min-height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-top: 0;
+}
+
+/* Caixa branca com cantos arredondados e sombra leve */
+.cartao {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+/* Faixa dos 3 filtros */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+.filtro-largo {
+    flex: 1;
+    min-width: 260px;
+}
+
+.rotulo {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Espaço entre as bolinhas do filtro de medalha */
+#filtro-medalha input {
+    margin-left: 12px;
+    margin-right: 4px;
+}
+
+/* Linhas de gráficos lado a lado (descem em telas estreitas) */
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.linha > .cartao {
+    flex: 1;
+    min-width: 420px;
+}
+
+/* Na linha do mapa: mapa com 2/3 da largura e pizza com 1/3 */
+.linha-mapa > .cartao:first-child {
+    flex: 2;
+}
+
+.linha-mapa > .cartao:last-child {
+    min-width: 300px;
+}
+
+/* Mapa e pizza com 50% da altura da tela (Etapa 5 do tutorial) */
+.grafico-alto {
+    height: 50vh;
+}
+
+.rodape {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}
